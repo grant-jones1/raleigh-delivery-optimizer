@@ -217,5 +217,5 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 .DS_Store
-data/*.csv
+data/Wake_County_MAR_Address_Data_Public_2107534861723958612.csv
 venv/
