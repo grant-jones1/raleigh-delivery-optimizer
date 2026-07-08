@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_217d42ce31e5be4e98678f4b5e322a6f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_217d42ce31e5be4e98678f4b5e322a6f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_217d42ce31e5be4e98678f4b5e322a6f = L.map(
+                "map_217d42ce31e5be4e98678f4b5e322a6f",
+                {
+                    center: [35.8, -78.6],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e041abb8196e85903fdcc27ee94da33e = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_e041abb8196e85903fdcc27ee94da33e.addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+            tile_layer_e041abb8196e85903fdcc27ee94da33e.addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+            var marker_428aa1faf8dcde1f88b8e757696ee4b3 = L.marker(
+                [35.7950854, -78.5585458],
+                {
+}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+            var icon_19f1cba1fac3bdb803e5efd1558f72a5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16aeba64305c2b29cbd64a6ca7e8e382 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32c4b2b2d24ed0851f1cb68d32995018 = $(`<div id="html_32c4b2b2d24ed0851f1cb68d32995018" style="width: 100.0%; height: 100.0%;">DRT3 Depot - Amazon</div>`)[0];
+                popup_16aeba64305c2b29cbd64a6ca7e8e382.setContent(html_32c4b2b2d24ed0851f1cb68d32995018);
+            
+        
+
+        marker_428aa1faf8dcde1f88b8e757696ee4b3.bindPopup(popup_16aeba64305c2b29cbd64a6ca7e8e382)
+        ;
+
+        
+    
+    
+                marker_428aa1faf8dcde1f88b8e757696ee4b3.setIcon(icon_19f1cba1fac3bdb803e5efd1558f72a5);
+            
+    
+            var circle_marker_8fb4f112a2cc6946868314382ece8665 = L.circleMarker(
+                [35.7950854, -78.5585458],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_104f74ec12d9d8757bbb3de8b64ad7fe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_10073dfb33d465ab6d5366d6a3a1b6e3 = $(`<div id="html_10073dfb33d465ab6d5366d6a3a1b6e3" style="width: 100.0%; height: 100.0%;">Driver 1 - Stop 0: 4520 Bullock Farm Rd</div>`)[0];
+                popup_104f74ec12d9d8757bbb3de8b64ad7fe.setContent(html_10073dfb33d465ab6d5366d6a3a1b6e3);
+            
+        
+
+        circle_marker_8fb4f112a2cc6946868314382ece8665.bindPopup(popup_104f74ec12d9d8757bbb3de8b64ad7fe)
+        ;
+
+        
+    
+    
+            var circle_marker_bff7928ba580dea1b93b9b5a773cf0c2 = L.circleMarker(
+                [35.82173274384589, -78.60547817998298],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_412c244f4638272d1c6509d05aa1b622 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c45f8b8405f03146072bfa9b75be6667 = $(`<div id="html_c45f8b8405f03146072bfa9b75be6667" style="width: 100.0%; height: 100.0%;">Driver 1 - Stop 1: 3100 Highwoods Blvd STE 115</div>`)[0];
+                popup_412c244f4638272d1c6509d05aa1b622.setContent(html_c45f8b8405f03146072bfa9b75be6667);
+            
+        
+
+        circle_marker_bff7928ba580dea1b93b9b5a773cf0c2.bindPopup(popup_412c244f4638272d1c6509d05aa1b622)
+        ;
+
+        
+    
+    
+            var circle_marker_496167d2b8f7ecd9cc9f9020b0ec3adb = L.circleMarker(
+                [35.902968152679286, -78.79993602799357],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_578b2f314ac04363b25a3d9e8e7222d8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4951ed248300020db2536f75e72b3e7 = $(`<div id="html_d4951ed248300020db2536f75e72b3e7" style="width: 100.0%; height: 100.0%;">Driver 1 - Stop 2: 9400 Brier Creek Pkwy STE 203</div>`)[0];
+                popup_578b2f314ac04363b25a3d9e8e7222d8.setContent(html_d4951ed248300020db2536f75e72b3e7);
+            
+        
+
+        circle_marker_496167d2b8f7ecd9cc9f9020b0ec3adb.bindPopup(popup_578b2f314ac04363b25a3d9e8e7222d8)
+        ;
+
+        
+    
+    
+            var circle_marker_034875bdc4f8cd1fdba349a62de82ab7 = L.circleMarker(
+                [35.88469655872478, -78.68001342476454],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_afbd7822d269b71e3b85405bac61ef6e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ebab10401f5e08e961ca28fade29e2d2 = $(`<div id="html_ebab10401f5e08e961ca28fade29e2d2" style="width: 100.0%; height: 100.0%;">Driver 1 - Stop 3: 7201 Creedmoor Rd STE 150</div>`)[0];
+                popup_afbd7822d269b71e3b85405bac61ef6e.setContent(html_ebab10401f5e08e961ca28fade29e2d2);
+            
+        
+
+        circle_marker_034875bdc4f8cd1fdba349a62de82ab7.bindPopup(popup_afbd7822d269b71e3b85405bac61ef6e)
+        ;
+
+        
+    
+    
+            var circle_marker_be7852c3792e15ea54b395f1103d6c3a = L.circleMarker(
+                [35.87487233976532, -78.62493475192669],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_15f51da506f34723f4c97000af0f9d5a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6ed2e7885b4c64e0682d80b145c3fa3f = $(`<div id="html_6ed2e7885b4c64e0682d80b145c3fa3f" style="width: 100.0%; height: 100.0%;">Driver 1 - Stop 4: 6675 Falls Of Neuse Rd STE 115</div>`)[0];
+                popup_15f51da506f34723f4c97000af0f9d5a.setContent(html_6ed2e7885b4c64e0682d80b145c3fa3f);
+            
+        
+
+        circle_marker_be7852c3792e15ea54b395f1103d6c3a.bindPopup(popup_15f51da506f34723f4c97000af0f9d5a)
+        ;
+
+        
+    
+    
+            var circle_marker_2f367599bb0d3d024562dfd32b8a0963 = L.circleMarker(
+                [35.7950854, -78.5585458],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_a4f56daf45671f24131df5ad07ee9026 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e77aa7ab9ffba97bd1aedb5c8f1ea853 = $(`<div id="html_e77aa7ab9ffba97bd1aedb5c8f1ea853" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 0: 4520 Bullock Farm Rd</div>`)[0];
+                popup_a4f56daf45671f24131df5ad07ee9026.setContent(html_e77aa7ab9ffba97bd1aedb5c8f1ea853);
+            
+        
+
+        circle_marker_2f367599bb0d3d024562dfd32b8a0963.bindPopup(popup_a4f56daf45671f24131df5ad07ee9026)
+        ;
+
+        
+    
+    
+            var circle_marker_630460b21c011f1ec9a485bd39ad0574 = L.circleMarker(
+                [35.77101519145435, -78.6780041538613],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_db6363dfbcc86b34a6eb5a26eb3ebc5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e54d216485b9e7f90718cfa9ee01d253 = $(`<div id="html_e54d216485b9e7f90718cfa9ee01d253" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 1: 1010 Main Campus Dr STE 150</div>`)[0];
+                popup_db6363dfbcc86b34a6eb5a26eb3ebc5d.setContent(html_e54d216485b9e7f90718cfa9ee01d253);
+            
+        
+
+        circle_marker_630460b21c011f1ec9a485bd39ad0574.bindPopup(popup_db6363dfbcc86b34a6eb5a26eb3ebc5d)
+        ;
+
+        
+    
+    
+            var circle_marker_59d60526d0f43790e96beafce9c016f8 = L.circleMarker(
+                [35.79172124549503, -78.7024663857868],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_e1017a4acb90f036acb0b81e6d0952a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_48ae46447a5d13b2b27da65e6b6f3948 = $(`<div id="html_48ae46447a5d13b2b27da65e6b6f3948" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 2: 547 Pylon Dr</div>`)[0];
+                popup_e1017a4acb90f036acb0b81e6d0952a2.setContent(html_48ae46447a5d13b2b27da65e6b6f3948);
+            
+        
+
+        circle_marker_59d60526d0f43790e96beafce9c016f8.bindPopup(popup_e1017a4acb90f036acb0b81e6d0952a2)
+        ;
+
+        
+    
+    
+            var circle_marker_43ec29dfc9f58425a8893dcbcce636a5 = L.circleMarker(
+                [35.86710435487361, -78.62952594306593],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_67bb26504c66092ef07d46a093b58c0c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_96ed4eebbb317ae1abba985316d8bb36 = $(`<div id="html_96ed4eebbb317ae1abba985316d8bb36" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 3: 6411 Lakecrest Dr</div>`)[0];
+                popup_67bb26504c66092ef07d46a093b58c0c.setContent(html_96ed4eebbb317ae1abba985316d8bb36);
+            
+        
+
+        circle_marker_43ec29dfc9f58425a8893dcbcce636a5.bindPopup(popup_67bb26504c66092ef07d46a093b58c0c)
+        ;
+
+        
+    
+    
+            var circle_marker_4b201210222c2d37bc2d26091f3ba432 = L.circleMarker(
+                [35.776633936334036, -78.63542323244775],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_8069141d880d3f176d4512aceb1ef969 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5588834ca15ba8b997ba0e9236b84023 = $(`<div id="html_5588834ca15ba8b997ba0e9236b84023" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 4: 226 E Martin St</div>`)[0];
+                popup_8069141d880d3f176d4512aceb1ef969.setContent(html_5588834ca15ba8b997ba0e9236b84023);
+            
+        
+
+        circle_marker_4b201210222c2d37bc2d26091f3ba432.bindPopup(popup_8069141d880d3f176d4512aceb1ef969)
+        ;
+
+        
+    
+    
+            var circle_marker_15ba91db145ffe3dfb5ef4c4b87bfcaa = L.circleMarker(
+                [35.89851704227064, -78.75683115644871],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_23ec44ac419fa09465317e63e68ed13f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_413c05fae79f42f037870751b69ce74e = $(`<div id="html_413c05fae79f42f037870751b69ce74e" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 5: 6308 Angus Dr STE E</div>`)[0];
+                popup_23ec44ac419fa09465317e63e68ed13f.setContent(html_413c05fae79f42f037870751b69ce74e);
+            
+        
+
+        circle_marker_15ba91db145ffe3dfb5ef4c4b87bfcaa.bindPopup(popup_23ec44ac419fa09465317e63e68ed13f)
+        ;
+
+        
+    
+    
+            var circle_marker_079364002662bb388cc9c1a9e0744fbc = L.circleMarker(
+                [35.87930302814772, -78.62552599629443],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_810f031e46c5feb2acff4ef2b410186b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_542701d6314132a7f23a340d025e69fb = $(`<div id="html_542701d6314132a7f23a340d025e69fb" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 6: 6837 Falls Of Neuse Rd STE 206</div>`)[0];
+                popup_810f031e46c5feb2acff4ef2b410186b.setContent(html_542701d6314132a7f23a340d025e69fb);
+            
+        
+
+        circle_marker_079364002662bb388cc9c1a9e0744fbc.bindPopup(popup_810f031e46c5feb2acff4ef2b410186b)
+        ;
+
+        
+    
+    
+            var circle_marker_c698e1bba04dd1e2b75637da9edef621 = L.circleMarker(
+                [35.78920947803947, -78.73248756107351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_f0dfc5af3202e4fb92d63b6fbc3f48a5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e9c1bd15c83a83ffd62bc8fdffc4e327 = $(`<div id="html_e9c1bd15c83a83ffd62bc8fdffc4e327" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 7: 6303 Chapel Hill Rd</div>`)[0];
+                popup_f0dfc5af3202e4fb92d63b6fbc3f48a5.setContent(html_e9c1bd15c83a83ffd62bc8fdffc4e327);
+            
+        
+
+        circle_marker_c698e1bba04dd1e2b75637da9edef621.bindPopup(popup_f0dfc5af3202e4fb92d63b6fbc3f48a5)
+        ;
+
+        
+    
+    
+            var circle_marker_16dc7a0bc4c3bd8204e465330a53d5a6 = L.circleMarker(
+                [35.793512668977534, -78.698898516452],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_340e2382fde83f300856fc46d1d35e78 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_354555f0c22d122c05596f6c60202e98 = $(`<div id="html_354555f0c22d122c05596f6c60202e98" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 8: 3214 Student Ln</div>`)[0];
+                popup_340e2382fde83f300856fc46d1d35e78.setContent(html_354555f0c22d122c05596f6c60202e98);
+            
+        
+
+        circle_marker_16dc7a0bc4c3bd8204e465330a53d5a6.bindPopup(popup_340e2382fde83f300856fc46d1d35e78)
+        ;
+
+        
+    
+    
+            var circle_marker_06d82013b45db7ea9cf4ece3b01290e7 = L.circleMarker(
+                [35.7950854, -78.5585458],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_373a5f5b59b44d90add0ffcc624a1115 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_69b351cc64324af0535d47f699441a59 = $(`<div id="html_69b351cc64324af0535d47f699441a59" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 0: 4520 Bullock Farm Rd</div>`)[0];
+                popup_373a5f5b59b44d90add0ffcc624a1115.setContent(html_69b351cc64324af0535d47f699441a59);
+            
+        
+
+        circle_marker_06d82013b45db7ea9cf4ece3b01290e7.bindPopup(popup_373a5f5b59b44d90add0ffcc624a1115)
+        ;
+
+        
+    
+    
+            var circle_marker_e1c5140949b7c1d92cfe2648cc9f90d6 = L.circleMarker(
+                [35.863890103773734, -78.57068338209967],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_65fc81759377bab58275d2c91e8f87cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f649221aed1415e65d35d14b4cf7c30 = $(`<div id="html_0f649221aed1415e65d35d14b4cf7c30" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 1: 5811 Poyner Village Pkwy</div>`)[0];
+                popup_65fc81759377bab58275d2c91e8f87cb.setContent(html_0f649221aed1415e65d35d14b4cf7c30);
+            
+        
+
+        circle_marker_e1c5140949b7c1d92cfe2648cc9f90d6.bindPopup(popup_65fc81759377bab58275d2c91e8f87cb)
+        ;
+
+        
+    
+    
+            var circle_marker_459580b66162b746bc5326bca07df7c5 = L.circleMarker(
+                [35.798060675588054, -78.69655983297349],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_c5510915e54af9e75ef596996de9390c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3c08a33e0b41b9e81725f579d71fd65e = $(`<div id="html_3c08a33e0b41b9e81725f579d71fd65e" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 2: 4200 Hillsborough St</div>`)[0];
+                popup_c5510915e54af9e75ef596996de9390c.setContent(html_3c08a33e0b41b9e81725f579d71fd65e);
+            
+        
+
+        circle_marker_459580b66162b746bc5326bca07df7c5.bindPopup(popup_c5510915e54af9e75ef596996de9390c)
+        ;
+
+        
+    
+    
+            var circle_marker_33844c19e95e85f55e2a04469e639d91 = L.circleMarker(
+                [35.82405614062926, -78.58833143114134],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_7e20d8ff33f00d5366bfe0bd88eb1afe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9863da63918fe1eb9cfd4a7067d132d0 = $(`<div id="html_9863da63918fe1eb9cfd4a7067d132d0" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 3: 3225 Capital Blvd</div>`)[0];
+                popup_7e20d8ff33f00d5366bfe0bd88eb1afe.setContent(html_9863da63918fe1eb9cfd4a7067d132d0);
+            
+        
+
+        circle_marker_33844c19e95e85f55e2a04469e639d91.bindPopup(popup_7e20d8ff33f00d5366bfe0bd88eb1afe)
+        ;
+
+        
+    
+    
+            var circle_marker_d48e5add9ecd2471916bc793638dafb6 = L.circleMarker(
+                [35.83987781426693, -78.67905627151733],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_96494a2263007130d0333da525475314 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_22ab2287947090a1330be1a0851c2f2a = $(`<div id="html_22ab2287947090a1330be1a0851c2f2a" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 4: 4325 Glenwood Ave UNIT B</div>`)[0];
+                popup_96494a2263007130d0333da525475314.setContent(html_22ab2287947090a1330be1a0851c2f2a);
+            
+        
+
+        circle_marker_d48e5add9ecd2471916bc793638dafb6.bindPopup(popup_96494a2263007130d0333da525475314)
+        ;
+
+        
+    
+    
+            var circle_marker_3a7d394454694a111422aa1175d80373 = L.circleMarker(
+                [35.83473656226304, -78.6889703384849],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_b6ffaf2a765227dd1b0c818b8af52f20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a7a535fa8225aae10fe41df7e956c1d7 = $(`<div id="html_a7a535fa8225aae10fe41df7e956c1d7" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 5: 4131 Parklake Ave STE 200</div>`)[0];
+                popup_b6ffaf2a765227dd1b0c818b8af52f20.setContent(html_a7a535fa8225aae10fe41df7e956c1d7);
+            
+        
+
+        circle_marker_3a7d394454694a111422aa1175d80373.bindPopup(popup_b6ffaf2a765227dd1b0c818b8af52f20)
+        ;
+
+        
+    
+    
+            var circle_marker_35c7b915c0d3be4a0bb2fbed7df06a0b = L.circleMarker(
+                [35.79230684316139, -78.74178199682476],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_b111c71409787aae1cf00c9d2adb22e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_113d3c646dae9165e786396cfdfb4a1a = $(`<div id="html_113d3c646dae9165e786396cfdfb4a1a" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 6: 701 Corporate Center Dr STE 185</div>`)[0];
+                popup_b111c71409787aae1cf00c9d2adb22e1.setContent(html_113d3c646dae9165e786396cfdfb4a1a);
+            
+        
+
+        circle_marker_35c7b915c0d3be4a0bb2fbed7df06a0b.bindPopup(popup_b111c71409787aae1cf00c9d2adb22e1)
+        ;
+
+        
+    
+    
+            var circle_marker_08356a2d7b54e9350f8cb8ff4e054fde = L.circleMarker(
+                [35.835093234115256, -78.61874129904622],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_3192ef713196485e1ab0cbc5beba99f3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_952e67dd52f8fd60a1665f13409d7aab = $(`<div id="html_952e67dd52f8fd60a1665f13409d7aab" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 7: 3757 Benson Dr</div>`)[0];
+                popup_3192ef713196485e1ab0cbc5beba99f3.setContent(html_952e67dd52f8fd60a1665f13409d7aab);
+            
+        
+
+        circle_marker_08356a2d7b54e9350f8cb8ff4e054fde.bindPopup(popup_3192ef713196485e1ab0cbc5beba99f3)
+        ;
+
+        
+    
+    
+            var circle_marker_0d6791853bf2c9e29dba7205df40891e = L.circleMarker(
+                [35.78476714624953, -78.63693033917045],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_4cb9f009cf8af28ef1771223c5a635ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ddd1cce14cbf6d781995f78ed148c6b4 = $(`<div id="html_ddd1cce14cbf6d781995f78ed148c6b4" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 8: 111 E North St</div>`)[0];
+                popup_4cb9f009cf8af28ef1771223c5a635ca.setContent(html_ddd1cce14cbf6d781995f78ed148c6b4);
+            
+        
+
+        circle_marker_0d6791853bf2c9e29dba7205df40891e.bindPopup(popup_4cb9f009cf8af28ef1771223c5a635ca)
+        ;
+
+        
+    
+    
+            tile_layer_e041abb8196e85903fdcc27ee94da33e.addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+                marker_428aa1faf8dcde1f88b8e757696ee4b3.setIcon(icon_19f1cba1fac3bdb803e5efd1558f72a5);
+            
+    
+            var circle_marker_6c0fc2ff61c2da9dcd2f7a777be4c67d = L.circleMarker(
+                [35.7950854, -78.5585458],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_f0d75c4d8d33bb0d4f7be17ad458b094 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7b36546eed6216242bf9dbd0705f873b = $(`<div id="html_7b36546eed6216242bf9dbd0705f873b" style="width: 100.0%; height: 100.0%;">Driver 1 - Stop 0: 4520 Bullock Farm Rd</div>`)[0];
+                popup_f0d75c4d8d33bb0d4f7be17ad458b094.setContent(html_7b36546eed6216242bf9dbd0705f873b);
+            
+        
+
+        circle_marker_6c0fc2ff61c2da9dcd2f7a777be4c67d.bindPopup(popup_f0d75c4d8d33bb0d4f7be17ad458b094)
+        ;
+
+        
+    
+    
+            var circle_marker_9e18ea8b2c0ba6fac757353ac46ba128 = L.circleMarker(
+                [35.82173274384589, -78.60547817998298],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_5d234fd08ff3439d38778f41ee27000b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_12f2f6f0fd624eca85987dce96fea56f = $(`<div id="html_12f2f6f0fd624eca85987dce96fea56f" style="width: 100.0%; height: 100.0%;">Driver 1 - Stop 1: 3100 Highwoods Blvd STE 115</div>`)[0];
+                popup_5d234fd08ff3439d38778f41ee27000b.setContent(html_12f2f6f0fd624eca85987dce96fea56f);
+            
+        
+
+        circle_marker_9e18ea8b2c0ba6fac757353ac46ba128.bindPopup(popup_5d234fd08ff3439d38778f41ee27000b)
+        ;
+
+        
+    
+    
+            var circle_marker_ab0c32fd75feea1589e99a01d7214de6 = L.circleMarker(
+                [35.902968152679286, -78.79993602799357],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_a03d77a56fac37a68bff4c9ef525018a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1376cb92fa16cc4cbc0144d1a9f1949a = $(`<div id="html_1376cb92fa16cc4cbc0144d1a9f1949a" style="width: 100.0%; height: 100.0%;">Driver 1 - Stop 2: 9400 Brier Creek Pkwy STE 203</div>`)[0];
+                popup_a03d77a56fac37a68bff4c9ef525018a.setContent(html_1376cb92fa16cc4cbc0144d1a9f1949a);
+            
+        
+
+        circle_marker_ab0c32fd75feea1589e99a01d7214de6.bindPopup(popup_a03d77a56fac37a68bff4c9ef525018a)
+        ;
+
+        
+    
+    
+            var circle_marker_2bb5a09a973d247181feb485a74eb098 = L.circleMarker(
+                [35.88469655872478, -78.68001342476454],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_c2d07465d66da96ca72400191a2b839b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b6278829842a6eaecb51e9428614bdfe = $(`<div id="html_b6278829842a6eaecb51e9428614bdfe" style="width: 100.0%; height: 100.0%;">Driver 1 - Stop 3: 7201 Creedmoor Rd STE 150</div>`)[0];
+                popup_c2d07465d66da96ca72400191a2b839b.setContent(html_b6278829842a6eaecb51e9428614bdfe);
+            
+        
+
+        circle_marker_2bb5a09a973d247181feb485a74eb098.bindPopup(popup_c2d07465d66da96ca72400191a2b839b)
+        ;
+
+        
+    
+    
+            var circle_marker_8c82d5198ab60ad6037389f42c863003 = L.circleMarker(
+                [35.87487233976532, -78.62493475192669],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_7c358bbcea853e6e436c005af6404c01 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c69938b0d5b13a816e0d25c58b88f69 = $(`<div id="html_5c69938b0d5b13a816e0d25c58b88f69" style="width: 100.0%; height: 100.0%;">Driver 1 - Stop 4: 6675 Falls Of Neuse Rd STE 115</div>`)[0];
+                popup_7c358bbcea853e6e436c005af6404c01.setContent(html_5c69938b0d5b13a816e0d25c58b88f69);
+            
+        
+
+        circle_marker_8c82d5198ab60ad6037389f42c863003.bindPopup(popup_7c358bbcea853e6e436c005af6404c01)
+        ;
+
+        
+    
+    
+            var circle_marker_54875a1257f7c7d8365a959be10743f6 = L.circleMarker(
+                [35.7950854, -78.5585458],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_244f44fc86410ed6f8390ddc040d6e73 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1e83ccc7bd11b3aeec71e822c5674743 = $(`<div id="html_1e83ccc7bd11b3aeec71e822c5674743" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 0: 4520 Bullock Farm Rd</div>`)[0];
+                popup_244f44fc86410ed6f8390ddc040d6e73.setContent(html_1e83ccc7bd11b3aeec71e822c5674743);
+            
+        
+
+        circle_marker_54875a1257f7c7d8365a959be10743f6.bindPopup(popup_244f44fc86410ed6f8390ddc040d6e73)
+        ;
+
+        
+    
+    
+            var circle_marker_b645cfb8e29d0f07a3ca38842b0628ac = L.circleMarker(
+                [35.77101519145435, -78.6780041538613],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_58cd15374898963564c0c71230bbe5c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2780f17962c5bd6c3df4b83939d148f = $(`<div id="html_e2780f17962c5bd6c3df4b83939d148f" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 1: 1010 Main Campus Dr STE 150</div>`)[0];
+                popup_58cd15374898963564c0c71230bbe5c5.setContent(html_e2780f17962c5bd6c3df4b83939d148f);
+            
+        
+
+        circle_marker_b645cfb8e29d0f07a3ca38842b0628ac.bindPopup(popup_58cd15374898963564c0c71230bbe5c5)
+        ;
+
+        
+    
+    
+            var circle_marker_172526a937d75ed23f32291256ab42e2 = L.circleMarker(
+                [35.79172124549503, -78.7024663857868],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_0126965d45b1901ef7a911e130dbfbe7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea11e46e986c1fe55d60cadcde441e0b = $(`<div id="html_ea11e46e986c1fe55d60cadcde441e0b" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 2: 547 Pylon Dr</div>`)[0];
+                popup_0126965d45b1901ef7a911e130dbfbe7.setContent(html_ea11e46e986c1fe55d60cadcde441e0b);
+            
+        
+
+        circle_marker_172526a937d75ed23f32291256ab42e2.bindPopup(popup_0126965d45b1901ef7a911e130dbfbe7)
+        ;
+
+        
+    
+    
+            var circle_marker_617c41677f30c6c52130a7397b067b88 = L.circleMarker(
+                [35.86710435487361, -78.62952594306593],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_62acc8412628ce85c87c1843c5e8dbf2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e111c1be32bb479c34b15b535a21b97e = $(`<div id="html_e111c1be32bb479c34b15b535a21b97e" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 3: 6411 Lakecrest Dr</div>`)[0];
+                popup_62acc8412628ce85c87c1843c5e8dbf2.setContent(html_e111c1be32bb479c34b15b535a21b97e);
+            
+        
+
+        circle_marker_617c41677f30c6c52130a7397b067b88.bindPopup(popup_62acc8412628ce85c87c1843c5e8dbf2)
+        ;
+
+        
+    
+    
+            var circle_marker_8f50525bd950a76e36f02bffe5495520 = L.circleMarker(
+                [35.776633936334036, -78.63542323244775],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_6659aaca2146e1c7d4389a5cfeda92c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_26fdabb418baab3ca2c9890bb1036a2b = $(`<div id="html_26fdabb418baab3ca2c9890bb1036a2b" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 4: 226 E Martin St</div>`)[0];
+                popup_6659aaca2146e1c7d4389a5cfeda92c1.setContent(html_26fdabb418baab3ca2c9890bb1036a2b);
+            
+        
+
+        circle_marker_8f50525bd950a76e36f02bffe5495520.bindPopup(popup_6659aaca2146e1c7d4389a5cfeda92c1)
+        ;
+
+        
+    
+    
+            var circle_marker_e7db9a458fc818d71f454a8866bbf6b5 = L.circleMarker(
+                [35.89851704227064, -78.75683115644871],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_6b7d43a2023d7e266dc177af0e3150c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_312bc1e47808d2d8f0f767107b937a22 = $(`<div id="html_312bc1e47808d2d8f0f767107b937a22" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 5: 6308 Angus Dr STE E</div>`)[0];
+                popup_6b7d43a2023d7e266dc177af0e3150c7.setContent(html_312bc1e47808d2d8f0f767107b937a22);
+            
+        
+
+        circle_marker_e7db9a458fc818d71f454a8866bbf6b5.bindPopup(popup_6b7d43a2023d7e266dc177af0e3150c7)
+        ;
+
+        
+    
+    
+            var circle_marker_e2a09068d1cf1033560fd312764f4cd4 = L.circleMarker(
+                [35.87930302814772, -78.62552599629443],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_6aca742515491d04fa03ee412695e47b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abdfabc1c4c7197c062d86ecd4d826de = $(`<div id="html_abdfabc1c4c7197c062d86ecd4d826de" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 6: 6837 Falls Of Neuse Rd STE 206</div>`)[0];
+                popup_6aca742515491d04fa03ee412695e47b.setContent(html_abdfabc1c4c7197c062d86ecd4d826de);
+            
+        
+
+        circle_marker_e2a09068d1cf1033560fd312764f4cd4.bindPopup(popup_6aca742515491d04fa03ee412695e47b)
+        ;
+
+        
+    
+    
+            var circle_marker_f21f493acb9137b3cf41a002ae9c1fc8 = L.circleMarker(
+                [35.78920947803947, -78.73248756107351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_a7690a332865a8d77f6e9173dc2e4fa5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a2bdb2f473be930795599ff19e2977a1 = $(`<div id="html_a2bdb2f473be930795599ff19e2977a1" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 7: 6303 Chapel Hill Rd</div>`)[0];
+                popup_a7690a332865a8d77f6e9173dc2e4fa5.setContent(html_a2bdb2f473be930795599ff19e2977a1);
+            
+        
+
+        circle_marker_f21f493acb9137b3cf41a002ae9c1fc8.bindPopup(popup_a7690a332865a8d77f6e9173dc2e4fa5)
+        ;
+
+        
+    
+    
+            var circle_marker_bf64db43293c5c73f3e770a779006f14 = L.circleMarker(
+                [35.793512668977534, -78.698898516452],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_dd253243cd543369f75e827b5218b61c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e4fca1a1b8ec4f4b770f1eee974d2374 = $(`<div id="html_e4fca1a1b8ec4f4b770f1eee974d2374" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 8: 3214 Student Ln</div>`)[0];
+                popup_dd253243cd543369f75e827b5218b61c.setContent(html_e4fca1a1b8ec4f4b770f1eee974d2374);
+            
+        
+
+        circle_marker_bf64db43293c5c73f3e770a779006f14.bindPopup(popup_dd253243cd543369f75e827b5218b61c)
+        ;
+
+        
+    
+    
+            var circle_marker_7487381b21864d52650ba47d7531d556 = L.circleMarker(
+                [35.7950854, -78.5585458],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_c5246d1b4d387664c2723e655c507131 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_77ebb5b737269dbd321a220931384298 = $(`<div id="html_77ebb5b737269dbd321a220931384298" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 0: 4520 Bullock Farm Rd</div>`)[0];
+                popup_c5246d1b4d387664c2723e655c507131.setContent(html_77ebb5b737269dbd321a220931384298);
+            
+        
+
+        circle_marker_7487381b21864d52650ba47d7531d556.bindPopup(popup_c5246d1b4d387664c2723e655c507131)
+        ;
+
+        
+    
+    
+            var circle_marker_8b3e2847ae6c773ef26cc56bff8e6a22 = L.circleMarker(
+                [35.863890103773734, -78.57068338209967],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_db8e99db2f9ecb05da1d32568a455bc6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8f8f248edbd60ecbdf2c1359fbe72b7e = $(`<div id="html_8f8f248edbd60ecbdf2c1359fbe72b7e" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 1: 5811 Poyner Village Pkwy</div>`)[0];
+                popup_db8e99db2f9ecb05da1d32568a455bc6.setContent(html_8f8f248edbd60ecbdf2c1359fbe72b7e);
+            
+        
+
+        circle_marker_8b3e2847ae6c773ef26cc56bff8e6a22.bindPopup(popup_db8e99db2f9ecb05da1d32568a455bc6)
+        ;
+
+        
+    
+    
+            var circle_marker_2a5bfb73c1ac197ad909cdbafbb3785d = L.circleMarker(
+                [35.798060675588054, -78.69655983297349],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_76e2d8735820a889d6e4f9de98049c1e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b4210dfffcc302350284c25f0bb56f77 = $(`<div id="html_b4210dfffcc302350284c25f0bb56f77" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 2: 4200 Hillsborough St</div>`)[0];
+                popup_76e2d8735820a889d6e4f9de98049c1e.setContent(html_b4210dfffcc302350284c25f0bb56f77);
+            
+        
+
+        circle_marker_2a5bfb73c1ac197ad909cdbafbb3785d.bindPopup(popup_76e2d8735820a889d6e4f9de98049c1e)
+        ;
+
+        
+    
+    
+            var circle_marker_e53a01bd3a6b393a93acda85931d4455 = L.circleMarker(
+                [35.82405614062926, -78.58833143114134],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_e8534eb228fc330cf1f8fbbb090f3d69 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_15d7dc798adc66eb5322de8e2b564da6 = $(`<div id="html_15d7dc798adc66eb5322de8e2b564da6" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 3: 3225 Capital Blvd</div>`)[0];
+                popup_e8534eb228fc330cf1f8fbbb090f3d69.setContent(html_15d7dc798adc66eb5322de8e2b564da6);
+            
+        
+
+        circle_marker_e53a01bd3a6b393a93acda85931d4455.bindPopup(popup_e8534eb228fc330cf1f8fbbb090f3d69)
+        ;
+
+        
+    
+    
+            var circle_marker_89a2a27171c7e2780cbf5036f7604912 = L.circleMarker(
+                [35.83987781426693, -78.67905627151733],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_22469931f7e73cdb84ae1e47cee9ade5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e344c71b45baaa3321b59488a31a5763 = $(`<div id="html_e344c71b45baaa3321b59488a31a5763" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 4: 4325 Glenwood Ave UNIT B</div>`)[0];
+                popup_22469931f7e73cdb84ae1e47cee9ade5.setContent(html_e344c71b45baaa3321b59488a31a5763);
+            
+        
+
+        circle_marker_89a2a27171c7e2780cbf5036f7604912.bindPopup(popup_22469931f7e73cdb84ae1e47cee9ade5)
+        ;
+
+        
+    
+    
+            var circle_marker_d571a3c14919193513c18c963daac2f2 = L.circleMarker(
+                [35.83473656226304, -78.6889703384849],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_c4fbf953888acf53615cad013aa1dd6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f42df9bdcc1c21e870a5fdcdc1ec746 = $(`<div id="html_9f42df9bdcc1c21e870a5fdcdc1ec746" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 5: 4131 Parklake Ave STE 200</div>`)[0];
+                popup_c4fbf953888acf53615cad013aa1dd6b.setContent(html_9f42df9bdcc1c21e870a5fdcdc1ec746);
+            
+        
+
+        circle_marker_d571a3c14919193513c18c963daac2f2.bindPopup(popup_c4fbf953888acf53615cad013aa1dd6b)
+        ;
+
+        
+    
+    
+            var circle_marker_fc96ee44176a706593f408593a665f08 = L.circleMarker(
+                [35.79230684316139, -78.74178199682476],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_82ce6ff81520baa528c3cb20ad04cf0a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9dc5f7d83b9c43600e802ecc730acf0d = $(`<div id="html_9dc5f7d83b9c43600e802ecc730acf0d" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 6: 701 Corporate Center Dr STE 185</div>`)[0];
+                popup_82ce6ff81520baa528c3cb20ad04cf0a.setContent(html_9dc5f7d83b9c43600e802ecc730acf0d);
+            
+        
+
+        circle_marker_fc96ee44176a706593f408593a665f08.bindPopup(popup_82ce6ff81520baa528c3cb20ad04cf0a)
+        ;
+
+        
+    
+    
+            var circle_marker_e1acafb556fe35ac60e2ffeeb7dc8b02 = L.circleMarker(
+                [35.835093234115256, -78.61874129904622],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_90fee83343fee455759da90bf0f0891e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_10b720036091dd2117b648921b2516e4 = $(`<div id="html_10b720036091dd2117b648921b2516e4" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 7: 3757 Benson Dr</div>`)[0];
+                popup_90fee83343fee455759da90bf0f0891e.setContent(html_10b720036091dd2117b648921b2516e4);
+            
+        
+
+        circle_marker_e1acafb556fe35ac60e2ffeeb7dc8b02.bindPopup(popup_90fee83343fee455759da90bf0f0891e)
+        ;
+
+        
+    
+    
+            var circle_marker_79fda6dc372d5a0d1c0fc2b6b25816e7 = L.circleMarker(
+                [35.78476714624953, -78.63693033917045],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_1f3e2cd1cc26afabbf8138a4250a8213 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c65d907ad0200eadbd818e843789c0a3 = $(`<div id="html_c65d907ad0200eadbd818e843789c0a3" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 8: 111 E North St</div>`)[0];
+                popup_1f3e2cd1cc26afabbf8138a4250a8213.setContent(html_c65d907ad0200eadbd818e843789c0a3);
+            
+        
+
+        circle_marker_79fda6dc372d5a0d1c0fc2b6b25816e7.bindPopup(popup_1f3e2cd1cc26afabbf8138a4250a8213)
+        ;
+
+        
+    
+    
+            var circle_marker_ea56a0a3122f8873adbdb24f70a02e20 = L.circleMarker(
+                [35.7950854, -78.5585458],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_aa841e121b3ace868ee6aa15f280e315 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_187c4f4b70e1f1ec209d3f3bed7ed62d = $(`<div id="html_187c4f4b70e1f1ec209d3f3bed7ed62d" style="width: 100.0%; height: 100.0%;">Driver 1 - Stop 0: 4520 Bullock Farm Rd</div>`)[0];
+                popup_aa841e121b3ace868ee6aa15f280e315.setContent(html_187c4f4b70e1f1ec209d3f3bed7ed62d);
+            
+        
+
+        circle_marker_ea56a0a3122f8873adbdb24f70a02e20.bindPopup(popup_aa841e121b3ace868ee6aa15f280e315)
+        ;
+
+        
+    
+    
+            var circle_marker_5a59add126deb463b65fd555aa2d5da3 = L.circleMarker(
+                [35.82173274384589, -78.60547817998298],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_a064b32abaa47586dbda9d706fc2a929 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c9981c3fdd70ed5fee43784b3f10a9e = $(`<div id="html_2c9981c3fdd70ed5fee43784b3f10a9e" style="width: 100.0%; height: 100.0%;">Driver 1 - Stop 1: 3100 Highwoods Blvd STE 115</div>`)[0];
+                popup_a064b32abaa47586dbda9d706fc2a929.setContent(html_2c9981c3fdd70ed5fee43784b3f10a9e);
+            
+        
+
+        circle_marker_5a59add126deb463b65fd555aa2d5da3.bindPopup(popup_a064b32abaa47586dbda9d706fc2a929)
+        ;
+
+        
+    
+    
+            var circle_marker_814a388de9671c0be8c9f87deb540b3e = L.circleMarker(
+                [35.902968152679286, -78.79993602799357],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_ebd0d233a2fe68186bb4fc1849806e84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ab46fd50ef2b113994fc58656a396c48 = $(`<div id="html_ab46fd50ef2b113994fc58656a396c48" style="width: 100.0%; height: 100.0%;">Driver 1 - Stop 2: 9400 Brier Creek Pkwy STE 203</div>`)[0];
+                popup_ebd0d233a2fe68186bb4fc1849806e84.setContent(html_ab46fd50ef2b113994fc58656a396c48);
+            
+        
+
+        circle_marker_814a388de9671c0be8c9f87deb540b3e.bindPopup(popup_ebd0d233a2fe68186bb4fc1849806e84)
+        ;
+
+        
+    
+    
+            var circle_marker_2cf4e3e4221fe96159073913e71a07a0 = L.circleMarker(
+                [35.88469655872478, -78.68001342476454],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_ff78092290e3030d6f99d3d9ab7d0959 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_119304ed9a6af738f676bfd4df49dc32 = $(`<div id="html_119304ed9a6af738f676bfd4df49dc32" style="width: 100.0%; height: 100.0%;">Driver 1 - Stop 3: 7201 Creedmoor Rd STE 150</div>`)[0];
+                popup_ff78092290e3030d6f99d3d9ab7d0959.setContent(html_119304ed9a6af738f676bfd4df49dc32);
+            
+        
+
+        circle_marker_2cf4e3e4221fe96159073913e71a07a0.bindPopup(popup_ff78092290e3030d6f99d3d9ab7d0959)
+        ;
+
+        
+    
+    
+            var circle_marker_a3a564b4a7accf4ea12bdbfa3018ce7a = L.circleMarker(
+                [35.87487233976532, -78.62493475192669],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_5f51c6bb147b5e154da1bbdce1b3ef5f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f4f1f0c6b2e667050f763013932759ce = $(`<div id="html_f4f1f0c6b2e667050f763013932759ce" style="width: 100.0%; height: 100.0%;">Driver 1 - Stop 4: 6675 Falls Of Neuse Rd STE 115</div>`)[0];
+                popup_5f51c6bb147b5e154da1bbdce1b3ef5f.setContent(html_f4f1f0c6b2e667050f763013932759ce);
+            
+        
+
+        circle_marker_a3a564b4a7accf4ea12bdbfa3018ce7a.bindPopup(popup_5f51c6bb147b5e154da1bbdce1b3ef5f)
+        ;
+
+        
+    
+    
+            var circle_marker_0966db110f06ad9a84a94c84810f86a9 = L.circleMarker(
+                [35.7950854, -78.5585458],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_7147d3bc140a991afe9f174693cb75c9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_532f4ed6aa79c5483da556e093d01c09 = $(`<div id="html_532f4ed6aa79c5483da556e093d01c09" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 0: 4520 Bullock Farm Rd</div>`)[0];
+                popup_7147d3bc140a991afe9f174693cb75c9.setContent(html_532f4ed6aa79c5483da556e093d01c09);
+            
+        
+
+        circle_marker_0966db110f06ad9a84a94c84810f86a9.bindPopup(popup_7147d3bc140a991afe9f174693cb75c9)
+        ;
+
+        
+    
+    
+            var circle_marker_cbc31417ffb8caecc72cded1f0da760a = L.circleMarker(
+                [35.77101519145435, -78.6780041538613],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_c0b951442c25bae950ccb9e2df3fc7a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9e2da15dbefa1feeda127b5a290a260 = $(`<div id="html_b9e2da15dbefa1feeda127b5a290a260" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 1: 1010 Main Campus Dr STE 150</div>`)[0];
+                popup_c0b951442c25bae950ccb9e2df3fc7a9.setContent(html_b9e2da15dbefa1feeda127b5a290a260);
+            
+        
+
+        circle_marker_cbc31417ffb8caecc72cded1f0da760a.bindPopup(popup_c0b951442c25bae950ccb9e2df3fc7a9)
+        ;
+
+        
+    
+    
+            var circle_marker_84217b2f94518b23ae7916132653364b = L.circleMarker(
+                [35.79172124549503, -78.7024663857868],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_989d5d14175224e02e4ed79ef634cc6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5318bda61ed0755bd6d061956c974123 = $(`<div id="html_5318bda61ed0755bd6d061956c974123" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 2: 547 Pylon Dr</div>`)[0];
+                popup_989d5d14175224e02e4ed79ef634cc6b.setContent(html_5318bda61ed0755bd6d061956c974123);
+            
+        
+
+        circle_marker_84217b2f94518b23ae7916132653364b.bindPopup(popup_989d5d14175224e02e4ed79ef634cc6b)
+        ;
+
+        
+    
+    
+            var circle_marker_a5f2545750ad04b376e0683dae50e85b = L.circleMarker(
+                [35.86710435487361, -78.62952594306593],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_27b3e7406fec13eac482a7bb93db339b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_afaf9b87020995af8ce333a51299edc1 = $(`<div id="html_afaf9b87020995af8ce333a51299edc1" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 3: 6411 Lakecrest Dr</div>`)[0];
+                popup_27b3e7406fec13eac482a7bb93db339b.setContent(html_afaf9b87020995af8ce333a51299edc1);
+            
+        
+
+        circle_marker_a5f2545750ad04b376e0683dae50e85b.bindPopup(popup_27b3e7406fec13eac482a7bb93db339b)
+        ;
+
+        
+    
+    
+            var circle_marker_82f7704776c1f47b29a6721ff3cf8370 = L.circleMarker(
+                [35.776633936334036, -78.63542323244775],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_51ed22d5b7bb3d2ab98bb6b916e2fdcd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3e86542fd2f3d6e345754e1e535fd07a = $(`<div id="html_3e86542fd2f3d6e345754e1e535fd07a" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 4: 226 E Martin St</div>`)[0];
+                popup_51ed22d5b7bb3d2ab98bb6b916e2fdcd.setContent(html_3e86542fd2f3d6e345754e1e535fd07a);
+            
+        
+
+        circle_marker_82f7704776c1f47b29a6721ff3cf8370.bindPopup(popup_51ed22d5b7bb3d2ab98bb6b916e2fdcd)
+        ;
+
+        
+    
+    
+            var circle_marker_3982c2586b3e0e8456a31e54f10fd259 = L.circleMarker(
+                [35.89851704227064, -78.75683115644871],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_9d969d17e6c165ad27c823f9a01d8a44 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_00e83cc5cb5d6e5ca2702fcc479011a7 = $(`<div id="html_00e83cc5cb5d6e5ca2702fcc479011a7" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 5: 6308 Angus Dr STE E</div>`)[0];
+                popup_9d969d17e6c165ad27c823f9a01d8a44.setContent(html_00e83cc5cb5d6e5ca2702fcc479011a7);
+            
+        
+
+        circle_marker_3982c2586b3e0e8456a31e54f10fd259.bindPopup(popup_9d969d17e6c165ad27c823f9a01d8a44)
+        ;
+
+        
+    
+    
+            var circle_marker_bdbcee5777075686d7bcef6c3e3012d8 = L.circleMarker(
+                [35.87930302814772, -78.62552599629443],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_6e0b4a03c47eeda4fc90c66c2a4f1667 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_10fa929940f99ee738d0f8db21111679 = $(`<div id="html_10fa929940f99ee738d0f8db21111679" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 6: 6837 Falls Of Neuse Rd STE 206</div>`)[0];
+                popup_6e0b4a03c47eeda4fc90c66c2a4f1667.setContent(html_10fa929940f99ee738d0f8db21111679);
+            
+        
+
+        circle_marker_bdbcee5777075686d7bcef6c3e3012d8.bindPopup(popup_6e0b4a03c47eeda4fc90c66c2a4f1667)
+        ;
+
+        
+    
+    
+            var circle_marker_736b921a31f7e57260d288bca97cf3c4 = L.circleMarker(
+                [35.78920947803947, -78.73248756107351],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_4fa7946a7b009d5678f77296e0ea1e22 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ffb0861b63ddc0ea5ac9b2d625dfcde4 = $(`<div id="html_ffb0861b63ddc0ea5ac9b2d625dfcde4" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 7: 6303 Chapel Hill Rd</div>`)[0];
+                popup_4fa7946a7b009d5678f77296e0ea1e22.setContent(html_ffb0861b63ddc0ea5ac9b2d625dfcde4);
+            
+        
+
+        circle_marker_736b921a31f7e57260d288bca97cf3c4.bindPopup(popup_4fa7946a7b009d5678f77296e0ea1e22)
+        ;
+
+        
+    
+    
+            var circle_marker_fba04a28884725740b3e67208e941928 = L.circleMarker(
+                [35.793512668977534, -78.698898516452],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_a6ac6168ac644b24840f24db3623cad5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2ffd866847d3e8f405163e8c495722b3 = $(`<div id="html_2ffd866847d3e8f405163e8c495722b3" style="width: 100.0%; height: 100.0%;">Driver 2 - Stop 8: 3214 Student Ln</div>`)[0];
+                popup_a6ac6168ac644b24840f24db3623cad5.setContent(html_2ffd866847d3e8f405163e8c495722b3);
+            
+        
+
+        circle_marker_fba04a28884725740b3e67208e941928.bindPopup(popup_a6ac6168ac644b24840f24db3623cad5)
+        ;
+
+        
+    
+    
+            var circle_marker_e7c33e1d1e2d28012689d308595f8ef2 = L.circleMarker(
+                [35.7950854, -78.5585458],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_ab484d5faaec698a6091368842b5c02c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ea98f6f7de22c91af15a944468fbf664 = $(`<div id="html_ea98f6f7de22c91af15a944468fbf664" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 0: 4520 Bullock Farm Rd</div>`)[0];
+                popup_ab484d5faaec698a6091368842b5c02c.setContent(html_ea98f6f7de22c91af15a944468fbf664);
+            
+        
+
+        circle_marker_e7c33e1d1e2d28012689d308595f8ef2.bindPopup(popup_ab484d5faaec698a6091368842b5c02c)
+        ;
+
+        
+    
+    
+            var circle_marker_7ef3e8eb07b50bc308ac7d5d9e04b07a = L.circleMarker(
+                [35.863890103773734, -78.57068338209967],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_8be2bd91f5457bde4e42f01be9b791a7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_90f698ef989df0241253dcd35c3eccc3 = $(`<div id="html_90f698ef989df0241253dcd35c3eccc3" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 1: 5811 Poyner Village Pkwy</div>`)[0];
+                popup_8be2bd91f5457bde4e42f01be9b791a7.setContent(html_90f698ef989df0241253dcd35c3eccc3);
+            
+        
+
+        circle_marker_7ef3e8eb07b50bc308ac7d5d9e04b07a.bindPopup(popup_8be2bd91f5457bde4e42f01be9b791a7)
+        ;
+
+        
+    
+    
+            var circle_marker_d57b07b3f62ea8b3617aa92b1ac3060e = L.circleMarker(
+                [35.798060675588054, -78.69655983297349],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_02821b8e20efd3443c741f6452347727 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f70bacf772d79d99a5774bf23b0f2b2 = $(`<div id="html_0f70bacf772d79d99a5774bf23b0f2b2" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 2: 4200 Hillsborough St</div>`)[0];
+                popup_02821b8e20efd3443c741f6452347727.setContent(html_0f70bacf772d79d99a5774bf23b0f2b2);
+            
+        
+
+        circle_marker_d57b07b3f62ea8b3617aa92b1ac3060e.bindPopup(popup_02821b8e20efd3443c741f6452347727)
+        ;
+
+        
+    
+    
+            var circle_marker_d3cfc1e0cf1b19da3783f47372f3c0c0 = L.circleMarker(
+                [35.82405614062926, -78.58833143114134],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_2b5f0e2345d31b58273ee78deb416066 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bd7ec2542bdf23792c304c4fe9e25537 = $(`<div id="html_bd7ec2542bdf23792c304c4fe9e25537" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 3: 3225 Capital Blvd</div>`)[0];
+                popup_2b5f0e2345d31b58273ee78deb416066.setContent(html_bd7ec2542bdf23792c304c4fe9e25537);
+            
+        
+
+        circle_marker_d3cfc1e0cf1b19da3783f47372f3c0c0.bindPopup(popup_2b5f0e2345d31b58273ee78deb416066)
+        ;
+
+        
+    
+    
+            var circle_marker_c939de7da55eca455aa0b99caf36ffc3 = L.circleMarker(
+                [35.83987781426693, -78.67905627151733],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_c909df0feca13f40a9260e99ccd84044 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d57f54a483225a6a5cabb679ef41c7d = $(`<div id="html_5d57f54a483225a6a5cabb679ef41c7d" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 4: 4325 Glenwood Ave UNIT B</div>`)[0];
+                popup_c909df0feca13f40a9260e99ccd84044.setContent(html_5d57f54a483225a6a5cabb679ef41c7d);
+            
+        
+
+        circle_marker_c939de7da55eca455aa0b99caf36ffc3.bindPopup(popup_c909df0feca13f40a9260e99ccd84044)
+        ;
+
+        
+    
+    
+            var circle_marker_b913533f3ea15015171c2a1184815826 = L.circleMarker(
+                [35.83473656226304, -78.6889703384849],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_3a3a70261deaf122180175bd7598979c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ed8177f206113cb01c64f86f8723907a = $(`<div id="html_ed8177f206113cb01c64f86f8723907a" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 5: 4131 Parklake Ave STE 200</div>`)[0];
+                popup_3a3a70261deaf122180175bd7598979c.setContent(html_ed8177f206113cb01c64f86f8723907a);
+            
+        
+
+        circle_marker_b913533f3ea15015171c2a1184815826.bindPopup(popup_3a3a70261deaf122180175bd7598979c)
+        ;
+
+        
+    
+    
+            var circle_marker_f0ecb257faa17b0c0b82b5867a9e2105 = L.circleMarker(
+                [35.79230684316139, -78.74178199682476],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_e7236440d40aeefc21ddb6051947ff7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_589306daaaa7228f06873b27313a495f = $(`<div id="html_589306daaaa7228f06873b27313a495f" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 6: 701 Corporate Center Dr STE 185</div>`)[0];
+                popup_e7236440d40aeefc21ddb6051947ff7e.setContent(html_589306daaaa7228f06873b27313a495f);
+            
+        
+
+        circle_marker_f0ecb257faa17b0c0b82b5867a9e2105.bindPopup(popup_e7236440d40aeefc21ddb6051947ff7e)
+        ;
+
+        
+    
+    
+            var circle_marker_d6e819198b371f0aab6587ed14e1ef89 = L.circleMarker(
+                [35.835093234115256, -78.61874129904622],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_3ce1140a470321908dcce8b0e2317166 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_360946c15bb4f04c20e20996d2e0713d = $(`<div id="html_360946c15bb4f04c20e20996d2e0713d" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 7: 3757 Benson Dr</div>`)[0];
+                popup_3ce1140a470321908dcce8b0e2317166.setContent(html_360946c15bb4f04c20e20996d2e0713d);
+            
+        
+
+        circle_marker_d6e819198b371f0aab6587ed14e1ef89.bindPopup(popup_3ce1140a470321908dcce8b0e2317166)
+        ;
+
+        
+    
+    
+            var circle_marker_7e565aa73365d84e3156cffd42da57e3 = L.circleMarker(
+                [35.78476714624953, -78.63693033917045],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+        var popup_fde0fee881a67e9070923dcfb4b02d2e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f35afb05e3104af208c402622add1b6 = $(`<div id="html_0f35afb05e3104af208c402622add1b6" style="width: 100.0%; height: 100.0%;">Driver 3 - Stop 8: 111 E North St</div>`)[0];
+                popup_fde0fee881a67e9070923dcfb4b02d2e.setContent(html_0f35afb05e3104af208c402622add1b6);
+            
+        
+
+        circle_marker_7e565aa73365d84e3156cffd42da57e3.bindPopup(popup_fde0fee881a67e9070923dcfb4b02d2e)
+        ;
+
+        
+    
+    
+            var poly_line_bbb0f62f6d00d620be3171c303463629 = L.polyline(
+                [[35.7950854, -78.5585458], [35.82173274384589, -78.60547817998298], [35.902968152679286, -78.79993602799357], [35.88469655872478, -78.68001342476454], [35.87487233976532, -78.62493475192669]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+            var poly_line_69be8a1fc8626c6848eb4f1b595d6ab6 = L.polyline(
+                [[35.7950854, -78.5585458], [35.77101519145435, -78.6780041538613], [35.79172124549503, -78.7024663857868], [35.86710435487361, -78.62952594306593], [35.776633936334036, -78.63542323244775], [35.89851704227064, -78.75683115644871], [35.87930302814772, -78.62552599629443], [35.78920947803947, -78.73248756107351], [35.793512668977534, -78.698898516452]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+    
+            var poly_line_09732e6a104d7e12e9c5729cc3132cbe = L.polyline(
+                [[35.7950854, -78.5585458], [35.863890103773734, -78.57068338209967], [35.798060675588054, -78.69655983297349], [35.82405614062926, -78.58833143114134], [35.83987781426693, -78.67905627151733], [35.83473656226304, -78.6889703384849], [35.79230684316139, -78.74178199682476], [35.835093234115256, -78.61874129904622], [35.78476714624953, -78.63693033917045]],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "green", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.7, "smoothFactor": 1.0, "stroke": true, "weight": 3}
+            ).addTo(map_217d42ce31e5be4e98678f4b5e322a6f);
+        
+</script>
+</html>
