@@ -219,3 +219,4 @@ __marimo__/
 .DS_Store
 data/Wake_County_MAR_Address_Data_Public_2107534861723958612.csv
 venv/
+data/*.graphml
