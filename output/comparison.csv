@@ -1,0 +1,4 @@
+Method,Drivers,Distance (km),Distance (mi),Driver-hours,Daily cost ($),vs. no tool
+Dataset order (no tool),3,280.4,174.2,11.01,121.97,+0.0%
+Nearest neighbor,3,156.9,97.5,6.9,68.25,+44.0%
+OR-Tools (GLS),3,145.5,90.4,6.52,63.3,+48.1%
